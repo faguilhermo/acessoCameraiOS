@@ -56,12 +56,20 @@
 			children = (
 				0C793136242A8F2500D22706 /* AppDelegate.swift */,
 				0C793138242A8F2500D22706 /* SceneDelegate.swift */,
-				0C79314A242A8F7500D22706 /* CameraViewController.swift */,
+				0C79314C242A93D700D22706 /* View */,
 				0C79313F242A8F2700D22706 /* Assets.xcassets */,
 				0C793141242A8F2700D22706 /* LaunchScreen.storyboard */,
 				0C793144242A8F2700D22706 /* Info.plist */,
 			);
 			path = cameraAccess;
+			sourceTree = "<group>";
+		};
+		0C79314C242A93D700D22706 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C79314A242A8F7500D22706 /* CameraViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
