@@ -22,7 +22,7 @@ public final class CameraViewController: UIViewController {
         addPhotoButton.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .normal)
         addPhotoButton.titleLabel?.font = UIFont.systemFont(ofSize: 50)
         addPhotoButton.addTarget(self, action: #selector(buttonAction(_ :)), for: .touchUpInside)
-        
+
         return addPhotoButton
     }()
 
@@ -30,9 +30,9 @@ public final class CameraViewController: UIViewController {
         let image = UIImageView()
         image.frame.size.height = 200
         image.frame.size.width = 200
-        image.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
         image.layer.cornerRadius = image.frame.size.width/2
         image.clipsToBounds = true
+        image.contentMode = .scaleAspectFill
 
         return image
     }()
@@ -52,19 +52,27 @@ public final class CameraViewController: UIViewController {
         addPhotoButton.center = self.view.center
     }
 
-    @objc private func buttonAction(_ : UIButton) {
-        if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            let photo = UIImagePickerController()
-            photo.sourceType = .camera
-            photo.delegate = imagePicker
-
-            self.present(photo, animated: true, completion: nil)
+    private func showMultimedia(_ option: Options) {
+        let multimedia = UIImagePickerController()
+        multimedia.delegate = imagePicker
+        if UIImagePickerController.isSourceTypeAvailable(.camera) && option == .camera {
+            multimedia.sourceType = .camera
+        } else {
+            multimedia.sourceType = .photoLibrary
         }
+        self.present(multimedia, animated: true, completion: nil)
+    }
+
+    @objc private func buttonAction(_ : UIButton) {
+        let menu = ImagePicker().optionsMenu { (option) in
+            self.showMultimedia(option)
+        }
+        present(menu, animated: true, completion: nil)
     }
 }
 
 extension CameraViewController: ImagePickerSelectedImage {
-    func imagePickerSelectedImage(_ photo: UIImage) {
+    internal func imagePickerSelectedImage(_ photo: UIImage) {
         image.image = photo
         addPhotoButton.isHidden = true
     }

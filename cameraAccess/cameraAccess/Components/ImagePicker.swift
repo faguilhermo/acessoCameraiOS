@@ -8,6 +8,11 @@
 
 import UIKit
 
+enum Options {
+    case camera
+    case library
+}
+
 protocol ImagePickerSelectedImage {
     func imagePickerSelectedImage(_ photo: UIImage)
 }
@@ -24,6 +29,25 @@ class ImagePicker: NSObject, UIImagePickerControllerDelegate {
         let photo = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         delegate?.imagePickerSelectedImage(photo)
         picker.dismiss(animated: true, completion: nil)
+    }
+
+    func optionsMenu(completion: @escaping(_ options: Options) -> Void) -> UIAlertController {
+        let menu = UIAlertController(title: "Add new image", message: "Please choose one option below.", preferredStyle: .actionSheet)
+
+        let camera = UIAlertAction(title: "Take picture", style: .default) { (camera) in
+            completion(.camera)
+        }
+
+        menu.addAction(camera)
+        let library = UIAlertAction(title: "Library", style: .default) { (library) in
+            completion(.library)
+        }
+        menu.addAction(library)
+
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        menu.addAction(cancel)
+
+        return menu
     }
 }
 
