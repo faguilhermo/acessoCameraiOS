@@ -7,27 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C793115242A7CE500D22706 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C793114242A7CE500D22706 /* AppDelegate.swift */; };
-		0C793117242A7CE500D22706 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C793116242A7CE500D22706 /* SceneDelegate.swift */; };
-		0C793119242A7CE500D22706 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C793118242A7CE500D22706 /* ViewController.swift */; };
-		0C79311C242A7CE500D22706 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C79311A242A7CE500D22706 /* Main.storyboard */; };
-		0C79311E242A7CE900D22706 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C79311D242A7CE900D22706 /* Assets.xcassets */; };
-		0C793121242A7CE900D22706 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C79311F242A7CE900D22706 /* LaunchScreen.storyboard */; };
+		0C793137242A8F2500D22706 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C793136242A8F2500D22706 /* AppDelegate.swift */; };
+		0C793139242A8F2500D22706 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C793138242A8F2500D22706 /* SceneDelegate.swift */; };
+		0C793140242A8F2700D22706 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C79313F242A8F2700D22706 /* Assets.xcassets */; };
+		0C793143242A8F2700D22706 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C793141242A8F2700D22706 /* LaunchScreen.storyboard */; };
+		0C79314B242A8F7500D22706 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C79314A242A8F7500D22706 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C793111242A7CE500D22706 /* acessoCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = acessoCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C793114242A7CE500D22706 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C793116242A7CE500D22706 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0C793118242A7CE500D22706 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0C79311B242A7CE500D22706 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0C79311D242A7CE900D22706 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0C793120242A7CE900D22706 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0C793122242A7CE900D22706 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C793133242A8F2500D22706 /* cameraAccess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cameraAccess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C793136242A8F2500D22706 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0C793138242A8F2500D22706 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0C79313F242A8F2700D22706 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C793142242A8F2700D22706 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C793144242A8F2700D22706 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C79314A242A8F7500D22706 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0C79310E242A7CE500D22706 /* Frameworks */ = {
+		0C793130242A8F2500D22706 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +35,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C793108242A7CE500D22706 = {
+		0C79312A242A8F2500D22706 = {
 			isa = PBXGroup;
 			children = (
-				0C793113242A7CE500D22706 /* acessoCamera */,
-				0C793112242A7CE500D22706 /* Products */,
+				0C793135242A8F2500D22706 /* cameraAccess */,
+				0C793134242A8F2500D22706 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0C793112242A7CE500D22706 /* Products */ = {
+		0C793134242A8F2500D22706 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0C793111242A7CE500D22706 /* acessoCamera.app */,
+				0C793133242A8F2500D22706 /* cameraAccess.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0C793113242A7CE500D22706 /* acessoCamera */ = {
+		0C793135242A8F2500D22706 /* cameraAccess */ = {
 			isa = PBXGroup;
 			children = (
-				0C793114242A7CE500D22706 /* AppDelegate.swift */,
-				0C793116242A7CE500D22706 /* SceneDelegate.swift */,
-				0C793118242A7CE500D22706 /* ViewController.swift */,
-				0C79311A242A7CE500D22706 /* Main.storyboard */,
-				0C79311D242A7CE900D22706 /* Assets.xcassets */,
-				0C79311F242A7CE900D22706 /* LaunchScreen.storyboard */,
-				0C793122242A7CE900D22706 /* Info.plist */,
+				0C793136242A8F2500D22706 /* AppDelegate.swift */,
+				0C793138242A8F2500D22706 /* SceneDelegate.swift */,
+				0C79314A242A8F7500D22706 /* CameraViewController.swift */,
+				0C79313F242A8F2700D22706 /* Assets.xcassets */,
+				0C793141242A8F2700D22706 /* LaunchScreen.storyboard */,
+				0C793144242A8F2700D22706 /* Info.plist */,
 			);
-			path = acessoCamera;
+			path = cameraAccess;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0C793110242A7CE500D22706 /* acessoCamera */ = {
+		0C793132242A8F2500D22706 /* cameraAccess */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C793125242A7CE900D22706 /* Build configuration list for PBXNativeTarget "acessoCamera" */;
+			buildConfigurationList = 0C793147242A8F2700D22706 /* Build configuration list for PBXNativeTarget "cameraAccess" */;
 			buildPhases = (
-				0C79310D242A7CE500D22706 /* Sources */,
-				0C79310E242A7CE500D22706 /* Frameworks */,
-				0C79310F242A7CE500D22706 /* Resources */,
+				0C79312F242A8F2500D22706 /* Sources */,
+				0C793130242A8F2500D22706 /* Frameworks */,
+				0C793131242A8F2500D22706 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = acessoCamera;
-			productName = acessoCamera;
-			productReference = 0C793111242A7CE500D22706 /* acessoCamera.app */;
+			name = cameraAccess;
+			productName = cameraAccess;
+			productReference = 0C793133242A8F2500D22706 /* cameraAccess.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0C793109242A7CE500D22706 /* Project object */ = {
+		0C79312B242A8F2500D22706 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Fabrício Guilhermo";
 				TargetAttributes = {
-					0C793110242A7CE500D22706 = {
+					0C793132242A8F2500D22706 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 0C79310C242A7CE500D22706 /* Build configuration list for PBXProject "acessoCamera" */;
+			buildConfigurationList = 0C79312E242A8F2500D22706 /* Build configuration list for PBXProject "cameraAccess" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +107,46 @@
 				en,
 				Base,
 			);
-			mainGroup = 0C793108242A7CE500D22706;
-			productRefGroup = 0C793112242A7CE500D22706 /* Products */;
+			mainGroup = 0C79312A242A8F2500D22706;
+			productRefGroup = 0C793134242A8F2500D22706 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0C793110242A7CE500D22706 /* acessoCamera */,
+				0C793132242A8F2500D22706 /* cameraAccess */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0C79310F242A7CE500D22706 /* Resources */ = {
+		0C793131242A8F2500D22706 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C793121242A7CE900D22706 /* LaunchScreen.storyboard in Resources */,
-				0C79311E242A7CE900D22706 /* Assets.xcassets in Resources */,
-				0C79311C242A7CE500D22706 /* Main.storyboard in Resources */,
+				0C793143242A8F2700D22706 /* LaunchScreen.storyboard in Resources */,
+				0C793140242A8F2700D22706 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0C79310D242A7CE500D22706 /* Sources */ = {
+		0C79312F242A8F2500D22706 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C793119242A7CE500D22706 /* ViewController.swift in Sources */,
-				0C793115242A7CE500D22706 /* AppDelegate.swift in Sources */,
-				0C793117242A7CE500D22706 /* SceneDelegate.swift in Sources */,
+				0C793137242A8F2500D22706 /* AppDelegate.swift in Sources */,
+				0C793139242A8F2500D22706 /* SceneDelegate.swift in Sources */,
+				0C79314B242A8F7500D22706 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0C79311A242A7CE500D22706 /* Main.storyboard */ = {
+		0C793141242A8F2700D22706 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0C79311B242A7CE500D22706 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0C79311F242A7CE900D22706 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0C793120242A7CE900D22706 /* Base */,
+				0C793142242A8F2700D22706 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +154,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0C793123242A7CE900D22706 /* Debug */ = {
+		0C793145242A8F2700D22706 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +214,7 @@
 			};
 			name = Debug;
 		};
-		0C793124242A7CE900D22706 /* Release */ = {
+		0C793146242A8F2700D22706 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,36 +268,36 @@
 			};
 			name = Release;
 		};
-		0C793126242A7CE900D22706 /* Debug */ = {
+		0C793148242A8F2700D22706 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LWWH6K4TJ;
-				INFOPLIST_FILE = acessoCamera/Info.plist;
+				INFOPLIST_FILE = cameraAccess/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fabricioguilhermo.acessoCamera;
+				PRODUCT_BUNDLE_IDENTIFIER = fabricioguilhermo.cameraAccess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		0C793127242A7CE900D22706 /* Release */ = {
+		0C793149242A8F2700D22706 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LWWH6K4TJ;
-				INFOPLIST_FILE = acessoCamera/Info.plist;
+				INFOPLIST_FILE = cameraAccess/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fabricioguilhermo.acessoCamera;
+				PRODUCT_BUNDLE_IDENTIFIER = fabricioguilhermo.cameraAccess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,25 +307,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0C79310C242A7CE500D22706 /* Build configuration list for PBXProject "acessoCamera" */ = {
+		0C79312E242A8F2500D22706 /* Build configuration list for PBXProject "cameraAccess" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0C793123242A7CE900D22706 /* Debug */,
-				0C793124242A7CE900D22706 /* Release */,
+				0C793145242A8F2700D22706 /* Debug */,
+				0C793146242A8F2700D22706 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0C793125242A7CE900D22706 /* Build configuration list for PBXNativeTarget "acessoCamera" */ = {
+		0C793147242A8F2700D22706 /* Build configuration list for PBXNativeTarget "cameraAccess" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0C793126242A7CE900D22706 /* Debug */,
-				0C793127242A7CE900D22706 /* Release */,
+				0C793148242A8F2700D22706 /* Debug */,
+				0C793149242A8F2700D22706 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0C793109242A7CE500D22706 /* Project object */;
+	rootObject = 0C79312B242A8F2500D22706 /* Project object */;
 }
