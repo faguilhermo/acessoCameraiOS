@@ -10,8 +10,11 @@ import UIKit
 
 public final class CameraViewController: UIViewController {
 
+    // MARK: - Constants
     let imagePicker = ImagePicker()
 
+    // MARK: - User interface elements
+    /// Creates a button to add photos in an UIImageView in the CameraViewController
     private lazy var addPhotoButton: UIButton = {
         let addPhotoButton = UIButton.init(type: .roundedRect)
         addPhotoButton.frame.size.height = 200
@@ -26,6 +29,7 @@ public final class CameraViewController: UIViewController {
         return addPhotoButton
     }()
 
+    /// Creates a Image View to receive photos
     private lazy var image: UIImageView = {
         let image = UIImageView()
         image.frame.size.height = 200
@@ -37,7 +41,7 @@ public final class CameraViewController: UIViewController {
         return image
     }()
 
-
+    // MARK: - Application lifecycle
     override public func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.5465146013, blue: 0.9686274529, alpha: 1)
@@ -45,6 +49,8 @@ public final class CameraViewController: UIViewController {
         setup()
     }
 
+    // MARK: - Functions
+    /// Add the UI elements on the view.
     private func initUI() {
         view.addSubview(image)
         image.center = self.view.center
@@ -52,6 +58,8 @@ public final class CameraViewController: UIViewController {
         addPhotoButton.center = self.view.center
     }
 
+    /// Add options to the button and a  delegate to the ImagePickerController
+    /// - Parameter option: Options to add image on the Image View, if option is .camera this function will verify if the camera is available, if true, will access it. Otherwise, if the option is .library this function will access the iOS photo library.
     private func showMultimedia(_ option: Options) {
         let multimedia = UIImagePickerController()
         multimedia.delegate = imagePicker
@@ -63,10 +71,14 @@ public final class CameraViewController: UIViewController {
         self.present(multimedia, animated: true, completion: nil)
     }
 
+    // MARK: - Button action
+    /// addPhotoButton action, show the action sheet to choose between .camera and .library.
+    /// - Parameter _: the button itself
     @objc private func buttonAction(_ : UIButton) {
         let menu = ImagePicker().optionsMenu { (option) in
             self.showMultimedia(option)
         }
+        // show menu
         present(menu, animated: true, completion: nil)
     }
 }
@@ -77,6 +89,7 @@ extension CameraViewController: ImagePickerSelectedImage {
         addPhotoButton.isHidden = true
     }
 
+    /// Setup the image picker delegate.
     private func setup() {
         imagePicker.delegate = self
     }
